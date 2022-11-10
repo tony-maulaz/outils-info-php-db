@@ -1,0 +1,19 @@
+{
+    "name": "php",
+    "dockerComposeFile": ["../docker-compose.yml"],
+    "service": "php",
+    "shutdownAction": "stopCompose", // none
+    
+    "customizations": {
+        // Configure properties specific to VS Code.
+        "vscode": {
+            "extensions": ["xdebug.php-debug"],
+            "settings": {            
+            }
+        }
+    },
+
+    "workspaceFolder": "/code",
+
+    "forwardPorts": [3000, 9003]
+}

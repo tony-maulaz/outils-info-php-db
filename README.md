@@ -1,0 +1,1 @@
+docker exec postgres-db psql -U postgres -d mydb -f /app/init-db.sql

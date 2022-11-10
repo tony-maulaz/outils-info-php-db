@@ -1,0 +1,53 @@
+version: "3.9"
+services:
+  web:
+    container_name: web-db
+    image: nginx:latest
+    ports:
+      - "8085:80"
+    volumes:
+      - ./code:/code
+      #-.:/workspace:cached
+      - ./site.conf:/etc/nginx/conf.d/site.conf
+    networks:
+      - backend
+      - frontend
+        
+  php:
+    container_name: php-db
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - "9003:9003"
+    volumes:
+      - ./code:/code
+      - ./xdebug.ini:/usr/local/etc/php/conf.d/docker-php-ext-xdebug.ini
+      - ./error_reporting.ini:/usr/local/etc/php/conf.d/error_reporting.ini
+    depends_on:
+        - web
+    networks:
+      - backend
+
+  db:
+    image: postgres
+    container_name: postgres-db
+    restart: always
+    environment:
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: password
+      POSTGRES_DB: mydb
+    volumes:
+      - db-data:/var/lib/postgresql/data
+      - .:/app
+    ports:
+      - 5432:5432
+    networks:
+      - backend
+  
+volumes:
+  db-data:
+
+networks:
+  frontend:
+  backend:
