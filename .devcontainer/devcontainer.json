@@ -7,7 +7,7 @@
     "customizations": {
         // Configure properties specific to VS Code.
         "vscode": {
-            "extensions": ["xdebug.php-debug"],
+            "extensions": ["xdebug.php-debug", "bmewburn.vscode-intelephense-client"],
             "settings": {            
             }
         }
@@ -15,5 +15,5 @@
 
     "workspaceFolder": "/code",
 
-    "forwardPorts": [3000, 9003]
+    "forwardPorts": [3000, 9003, 8085]
 }

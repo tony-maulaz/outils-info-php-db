@@ -2,7 +2,6 @@
 <html>
  <head>
   <meta charset="utf-8">
-  <link rel="shortcut icon" href="#">
   <link href="style.css" rel="stylesheet" media="all"> 
   <title>Base de données en PHP</title>
  </head>

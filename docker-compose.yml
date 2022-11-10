@@ -8,7 +8,7 @@ services:
     volumes:
       - ./code:/code
       #-.:/workspace:cached
-      - ./site.conf:/etc/nginx/conf.d/site.conf
+      - ./nginx-conf:/etc/nginx/conf.d/
     networks:
       - backend
       - frontend
