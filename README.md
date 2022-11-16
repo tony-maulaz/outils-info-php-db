@@ -43,8 +43,8 @@ Les extensions suivantes sont nécessaires :
 - Il est possible en passant un paramètre dans l'url de choisir le nombre de colonnes.
 
 **Tips :**
-*- utiliser la fonction `getimagesize()` pour récupérer la taille d'une image.*
-*- utiliser la fonction `glob()` ou `scandir` pour récupérer la liste des fichiers.*
+-  *Utiliser la fonction `getimagesize()` pour récupérer la taille d'une image.*
+-  *Utiliser la fonction `glob()` ou `scandir` pour récupérer la liste des fichiers.*
 
 
 # Labo 3
