@@ -64,3 +64,15 @@ Pour débugger un fichier, entrer dans le terminal :
 - [ ] Afficher la liste des titres de livres
 - [ ] Afficher la liste des personnes avec les adresses
 - [ ] Ajouter la possibilité de créer un livre en passant les paramètres par l'URL
+
+# Labo JS
+- Reprendre l'affichage des images comme dans la galerie PHP.
+- Afficher les images en 100px de largeur pour avoir une galerie d'aperçu.
+- Ne pas afficher d'information autour de l'image.
+- Supprimer l'ouverture d'une image dans un nouvel onglet en cliquant dessus.
+
+- Focus : lorsque la souris passe sur une image, afficher une bordure autour de l'image.
+- Lors du clique sur une image, il faut l'afficher en grand format avec les informations.
+
+Exemple de layout :
+![Galerie](images/galerie.png)
