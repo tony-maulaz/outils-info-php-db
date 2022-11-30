@@ -12,13 +12,26 @@
 # Accès au site
 `http://localhost:8085`
 
-# Debug
+# Debug PHP
 Se connecter avec VS Code sur le container `php-db`
 - Dans VS Code : `F1` puis `Remote-Containers: Attach to Running Container...`
 
 Les extensions suivantes sont nécessaires :
 - PHP Debug
 - PHP Intelephense
+
+# Execution d'un fichier JS et debug
+Se connecter avec VS Code sur le container `php-db`
+- Dans VS Code : `F1` puis `Remote-Containers: Attach to Running Container...`
+
+Pour exécuter un fichier, entrer dans le terminal :
+`node test.js`
+
+Pour débugger un fichier, entrer dans le terminal :
+- Cliquer sur l'onglet `Debug`
+- Node JS add...
+- Run current file
+
 
 # Labo 1
 - Utiliser le code html exemple et créer une boucle pour générer la liste de cartes.
